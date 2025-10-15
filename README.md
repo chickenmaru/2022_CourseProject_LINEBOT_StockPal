@@ -1,4 +1,4 @@
-# Overview
+# 📘 Overview
 This project is a LINE chatbot that provides users with information about stocks and recent news. The bot is built with Python using the `Flask` and `LineBotSdk` libraries for the chatbot functionality, and `Selenium`, `BeautifulSoup`, and other data-processing libraries to scrape and handle external data.
 
 The bot supports several features, including:
@@ -10,7 +10,7 @@ The bot supports several features, including:
 - **Displaying hot topics:** The bot generates a word cloud of popular discussion topics from the PTT Stock board and sends it as an image.
 - **Echoing messages:** If a user's message doesn't match a command, the bot will "sing" the message back by adding musical notes (♫♪♬) between the characters.
 
-# Features and Commands
+# ⭐ Features & Commands
 
 | Command | Description |
 | :--- | :--- |
@@ -22,7 +22,7 @@ The bot supports several features, including:
 | `查詢近期熱門話題` | Generates and displays a word cloud of hot topics from the PTT Stock board. |
 | (Any other text) | The bot will "sing" the message back by adding musical notes. |
 
-# Technical Details
+# 💻 Technical Details
 
 ## `main.py`
 This file sets up the core LINE bot application using `Flask`. It handles incoming messages from the LINE platform via a webhook. The `pretty_echo` function is the main logic for processing user messages and directing them to the appropriate functions in `grab.py`. It uses a `worknum` variable to manage multi-step conversations (e.g., waiting for a stock code after a query command).
